@@ -1,5 +1,33 @@
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
+/*VARIABLES*/
+/*EXTENDS*/
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more {
+  padding: 20px 0;
+  width: 250px;
+  border-radius: 35px;
+  border: none;
+  background-color: #b88b58;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*OTHER*/
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -67,27 +95,13 @@ body {
 
 /*SECTION JUMBOTRON*/
 .jumbotron {
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
   background-image: url("https://zapodaj.net/images/9219981769a1b.png");
   background-size: cover;
   height: 80vh;
 }
 
 .jumbotron .header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   text-transform: uppercase;
   position: relative;
 }
@@ -113,17 +127,6 @@ body {
 }
 
 .jumbotron .get-in-touch {
-  padding: 20px 0;
-  width: 250px;
-  border-radius: 35px;
-  border: none;
-  background-color: #b88b58;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
   margin-top: 25px;
 }
 
@@ -144,23 +147,11 @@ body {
 
 /*SECTION ABOUT US */
 .about-us {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   margin-bottom: 55px;
 }
 
 .about-us .header {
   text-transform: uppercase;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   margin-top: 35px;
 }
 
@@ -194,17 +185,6 @@ body {
 }
 
 .about-us .container .content .learn-more {
-  padding: 20px 0;
-  width: 250px;
-  border-radius: 35px;
-  border: none;
-  background-color: #b88b58;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
   margin-top: 10px;
 }
 
@@ -214,23 +194,11 @@ body {
 
 /*SECTION SERVICES*/
 .services {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   background-color: #000;
 }
 
 .services .header {
   text-transform: uppercase;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   margin-top: 35px;
   color: #fff;
 }
@@ -258,12 +226,6 @@ body {
   width: 22%;
   padding: 25px;
   color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   margin: 55px 0;
 }
 
@@ -272,12 +234,6 @@ body {
 }
 
 .services .container .box .wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   text-align: center;
   width: 60%;
 }
