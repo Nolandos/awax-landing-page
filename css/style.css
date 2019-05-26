@@ -74,9 +74,11 @@ body {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-image: url("https://zapodaj.net/images/9219981769a1b.png");
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
 }
 
 .jumbotron .header {
@@ -88,7 +90,6 @@ body {
       align-items: center;
   text-transform: uppercase;
   position: relative;
-  margin-top: 70px;
 }
 
 .jumbotron .header .title {
