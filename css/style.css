@@ -496,4 +496,21 @@ body {
   content: '';
   font-size: 5em;
 }
+
+/*SECTION CLIENT LOGOS */
+.client-logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 50px 0;
+}
+
+.client-logos .container {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=style.css.map */
