@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -445,5 +445,55 @@ body {
   background-color: #b88b58;
   transform: scale(1.2);
   transition-duration: 0.8s;
+}
+
+/*HAPPY CLIENTS SECTION*/
+.happy-clients {
+  background-color: #f7f7f7;
+}
+
+.happy-clients .header {
+  margin-top: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.happy-clients .header .title {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.happy-clients .header .text {
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.happy-clients .client {
+  width: 70%;
+  margin-top: 55px;
+}
+
+.happy-clients .client > img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.happy-clients .client .name {
+  margin-bottom: 0;
+}
+
+.happy-clients .client .position {
+  margin-top: 5px;
+}
+
+.happy-clients .client .quote {
+  text-align: center;
+  color: #aeaeae;
+}
+
+.happy-clients .client .quote::before {
+  content: '';
+  font-size: 5em;
 }
 /*# sourceMappingURL=style.css.map */

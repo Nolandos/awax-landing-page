@@ -359,8 +359,7 @@ body {
         }
         .text {
             margin-top: 10px;
-            font-weight: bold;
-        
+            font-weight: bold;        
         }
     } 
     .container {
@@ -408,6 +407,50 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+/*HAPPY CLIENTS SECTION*/
+.happy-clients {
+    @extend .flex-column;
+    background-color: #f7f7f7;
+    .header {
+        margin-top: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        .title {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+        .text {
+            margin-top: 10px;
+            color: #aeaeae;
+            font-weight: bold;
+        }
+    }
+
+    .client {
+        @extend .flex-column;
+        width: 70%;
+        margin-top: 55px;
+        >img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .name {
+            margin-bottom: 0;
+        }
+        .position {
+            margin-top: 5px;
+        }
+        .quote {
+          text-align: center;  
+          color: #aeaeae;
+          &::before {
+            content: '';
+            font-size: 5em;
+          }
         }
     }
 }
