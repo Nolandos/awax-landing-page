@@ -657,3 +657,62 @@ body {
     }
 
 }
+
+/*SECTION SOME FACTS*/
+.some-facts {
+    @extend .flex-column;
+    background-color: #000;
+    color: #fff;
+    .header {
+        margin-top: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+        .text {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+        .box {
+            @extend .flex-column;
+            text-align: center;
+            width: 20%;
+
+            .number {
+                font-size: 3.5em;
+                font-weight: bold;
+                position: relative;
+                color: $sand-color;
+                margin-bottom: 15px;
+
+                &:after {
+                    content: '';
+                    width: 30px;
+                    height: 2px;
+                    bottom: -15px;
+                    right: calc(50% - 15px);
+                    position: absolute;
+                    background-color: $sand-color;
+                }
+            }
+            .category {
+                font-size: 1.5em;
+                height: 60px;
+            }
+            .description {
+                margin-top: 0;
+            }
+        }
+    }
+}

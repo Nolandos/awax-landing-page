@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -709,5 +709,69 @@ body {
 
 .offert-plan .get-in-touch {
   margin: 45px 0;
+}
+
+/*SECTION SOME FACTS*/
+.some-facts {
+  background-color: #000;
+  color: #fff;
+}
+
+.some-facts .header {
+  margin-top: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.some-facts .header .title {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.some-facts .header .text {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.some-facts .container {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.some-facts .container .box {
+  text-align: center;
+  width: 20%;
+}
+
+.some-facts .container .box .number {
+  font-size: 3.5em;
+  font-weight: bold;
+  position: relative;
+  color: #b88b58;
+  margin-bottom: 15px;
+}
+
+.some-facts .container .box .number:after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  bottom: -15px;
+  right: calc(50% - 15px);
+  position: absolute;
+  background-color: #b88b58;
+}
+
+.some-facts .container .box .category {
+  font-size: 1.5em;
+  height: 60px;
+}
+
+.some-facts .container .box .description {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
