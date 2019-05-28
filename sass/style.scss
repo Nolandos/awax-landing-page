@@ -578,3 +578,82 @@ body {
         }
     }
 }
+
+/*SECTION OFFERT PLAN*/
+.offert-plan {
+    @extend .flex-column;
+    .header {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        .title {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+        .text {
+            margin-top: 10px;
+            color: #aeaeae;
+            font-weight: bold;
+        }
+    }
+    .container {
+        width: 80%;
+        padding: 0 25px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #bebebe;
+        @extend .flex-column;
+        flex-direction: row;
+
+        .image {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        .details {
+            width: 50%;
+            .feature {
+                .name {
+                    margin-bottom: 0;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        left: -65px;
+                        background-image: url('../images/okay-logo.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+                .description {
+                    margin-top: 5px;
+                    color: $gray-awax;
+                }
+                .options {
+                    list-style-type: none;
+                    >li {
+                        position: relative;
+                        color: $gray-awax;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 1.5px;
+                            width: 17px;
+                            top: 50%;
+                            left: -22px;
+                            background-color: $gray-awax;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .get-in-touch {
+        @extend .button;
+        margin: 45px 0;
+    }
+
+}

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -13,7 +13,7 @@
       justify-content: center;
 }
 
-.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose {
+.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose, .offert-plan .get-in-touch {
   padding: 20px 0;
   width: 250px;
   border-radius: 35px;
@@ -28,7 +28,7 @@
   outline: none;
 }
 
-.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover {
+.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover, .offert-plan .get-in-touch:hover {
   background-color: #aeaeae;
 }
 
@@ -625,5 +625,89 @@ body {
 
 .price .container .box .choose:hover {
   background-color: #b88b58;
+}
+
+/*SECTION OFFERT PLAN*/
+.offert-plan .header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offert-plan .header .title {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.offert-plan .header .text {
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.offert-plan .container {
+  width: 80%;
+  padding: 0 25px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #bebebe;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.offert-plan .container .image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 50%;
+}
+
+.offert-plan .container .details {
+  width: 50%;
+}
+
+.offert-plan .container .details .feature .name {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.offert-plan .container .details .feature .name::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -65px;
+  background-image: url("../images/okay-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offert-plan .container .details .feature .description {
+  margin-top: 5px;
+  color: #aeaeae;
+}
+
+.offert-plan .container .details .feature .options {
+  list-style-type: none;
+}
+
+.offert-plan .container .details .feature .options > li {
+  position: relative;
+  color: #aeaeae;
+}
+
+.offert-plan .container .details .feature .options > li::before {
+  content: '';
+  position: absolute;
+  height: 1.5px;
+  width: 17px;
+  top: 50%;
+  left: -22px;
+  background-color: #aeaeae;
+}
+
+.offert-plan .get-in-touch {
+  margin: 45px 0;
 }
 /*# sourceMappingURL=style.css.map */
