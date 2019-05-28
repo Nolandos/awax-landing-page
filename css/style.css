@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -13,7 +13,7 @@
       justify-content: center;
 }
 
-.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects {
+.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose {
   padding: 20px 0;
   width: 250px;
   border-radius: 35px;
@@ -28,7 +28,7 @@
   outline: none;
 }
 
-.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover {
+.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover {
   background-color: #aeaeae;
 }
 
@@ -371,6 +371,7 @@ body {
 
 .our-team .header {
   margin-top: 35px;
+  margin-bottom: 35px;
   color: #fff;
 }
 
@@ -390,6 +391,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 35px;
 }
 
 .our-team .container .worker {
@@ -518,5 +520,110 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+/*SECTION PRICE*/
+.price {
+  background-color: #ededed;
+}
+
+.price .header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price .header .title {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.price .header .text {
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.price .container {
+  width: 95%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.price .container .box {
+  background-color: #fff;
+  padding: 10px 25px;
+  width: 21%;
+  margin-bottom: 45px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.price .container .box .name {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.price .container .box .price-value {
+  font-size: 2.5em;
+  margin-top: 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.price .container .box .price-value::before {
+  content: '$';
+  margin-right: 10px;
+}
+
+.price .container .box .price-value::after {
+  content: '/month';
+  text-transform: uppercase;
+  font-size: 0.35em;
+  font-weight: 400;
+  color: #aeaeae;
+  position: absolute;
+  bottom: -17px;
+  right: calc(50% - 2.5em);
+}
+
+.price .container .box .offert-details {
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  list-style-type: none;
+  color: #7e7e7e;
+}
+
+.price .container .box .offert-details > li {
+  padding: 10px 0;
+  position: relative;
+}
+
+.price .container .box .offert-details > li::after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -2px;
+  left: calc(50% - 5px);
+}
+
+.price .container .box .offert-details > li:last-child::after {
+  display: none;
+}
+
+.price .container .box .choose {
+  background-color: #373737;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.price .container .box .choose:hover {
+  background-color: #b88b58;
 }
 /*# sourceMappingURL=style.css.map */

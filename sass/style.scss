@@ -351,6 +351,7 @@ body {
    .header {
         @extend .flex-column;
         margin-top: 35px;
+        margin-bottom: 35px;
         color: #fff;
 
         .title {
@@ -366,6 +367,7 @@ body {
         width: 80%;
         display: flex;
         justify-content: space-around;
+        margin-bottom: 35px;
         .worker {
             width: 30%;
             min-height: 400px;
@@ -476,6 +478,103 @@ body {
         justify-content: space-around;
         >img {
 
+        }
+    }
+}
+
+/*SECTION PRICE*/
+.price {
+    @extend .flex-column;
+    background-color: #ededed;
+
+    .header {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        .title {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+        .text {
+            margin-top: 10px;
+            color: #aeaeae;
+            font-weight: bold;
+        }
+    }
+    .container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        .box {
+            background-color: #fff;
+            @extend .flex-column;
+            padding: 10px 25px;
+            width: 21%;
+            margin-bottom: 45px;
+            margin-right: 15px;
+            margin-left: 15px;
+            .name {
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            .price-value {
+                font-size: 2.5em;
+                margin-top: 0;
+                font-weight: bold;
+                position: relative;
+
+                &::before {
+                    content: '$';
+                    margin-right: 10px;
+                }
+                &::after {
+                    content: '/month';
+                    text-transform: uppercase;
+                    font-size: 0.35em;
+                    font-weight: 400;
+                    color: $gray-awax;
+                    position: absolute;
+                    bottom: -17px;
+                    right: calc(50% - 2.5em);
+                }
+            }
+            .offert-details {
+                text-align: center;
+                padding-left: 0;
+                margin-top: 0;
+                list-style-type: none;
+                color: #7e7e7e;
+                
+                >li {
+                    padding: 10px 0;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 10px;
+                        height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        bottom: -2px;
+                        left: calc(50% - 5px);
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+            .choose {
+                @extend .button;
+                background-color: #373737;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                &:hover {
+                    background-color: $sand-color;
+                }
+            }
         }
     }
 }
