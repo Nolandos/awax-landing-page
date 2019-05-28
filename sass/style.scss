@@ -432,7 +432,7 @@ body {
 
     .client {
         @extend .flex-column;
-        width: 70%;
+        width: 50%;
         margin-top: 55px;
         >img {
             border-radius: 50%;
@@ -443,13 +443,23 @@ body {
         }
         .position {
             margin-top: 5px;
+            margin-bottom: 40px;
         }
         .quote {
           text-align: center;  
           color: #aeaeae;
+          position: relative;
+          margin-top: 50px;
+          margin-bottom: 75px;
+
           &::before {
-            content: '';
-            font-size: 5em;
+            content: '\e804';
+            font-family: 'fontello';
+            transform: rotate(180deg);
+            font-size: 3em;
+            position: absolute;
+            top: -65px;
+            left: calc(50% - 20px);
           }
         }
     }

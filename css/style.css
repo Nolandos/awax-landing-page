@@ -470,7 +470,7 @@ body {
 }
 
 .happy-clients .client {
-  width: 70%;
+  width: 50%;
   margin-top: 55px;
 }
 
@@ -485,16 +485,25 @@ body {
 
 .happy-clients .client .position {
   margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 .happy-clients .client .quote {
   text-align: center;
   color: #aeaeae;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
 .happy-clients .client .quote::before {
-  content: '';
-  font-size: 5em;
+  content: '\e804';
+  font-family: 'fontello';
+  transform: rotate(180deg);
+  font-size: 3em;
+  position: absolute;
+  top: -65px;
+  left: calc(50% - 20px);
 }
 
 /*SECTION CLIENT LOGOS */

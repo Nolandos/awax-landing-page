@@ -71,6 +71,12 @@
       "css": "up-open-big",
       "code": 59395,
       "src": "entypo"
+    },
+    {
+      "uid": "c3e5dafba1739ef33cc574c7484febf7",
+      "css": "quote",
+      "code": 59396,
+      "src": "entypo"
     }
   ]
 }
