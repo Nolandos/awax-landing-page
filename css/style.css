@@ -25,6 +25,11 @@
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  outline: none;
+}
+
+.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover {
+  background-color: #aeaeae;
 }
 
 /*OTHER*/
@@ -130,10 +135,6 @@ body {
   margin-top: 25px;
 }
 
-.jumbotron .get-in-touch:hover {
-  background-color: #ca8f4d;
-}
-
 .jumbotron .cell-phone {
   width: 80px;
   height: 80px;
@@ -155,7 +156,7 @@ body {
 }
 
 .jumbotron .cell-phone:hover {
-  background-color: #ca8f4d;
+  background-color: #aeaeae;
 }
 
 /*SECTION ABOUT US */
@@ -199,10 +200,6 @@ body {
 
 .about-us .container .content .learn-more {
   margin-top: 10px;
-}
-
-.about-us .container .content .learn-more:hover {
-  background-color: #ca8f4d;
 }
 
 /*SECTION SERVICES*/

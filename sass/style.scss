@@ -4,6 +4,7 @@
 /*VARIABLES*/
 $sand-color: #b88b58;
 $sand-color-hover: #ca8f4d;
+$gray-awax: #aeaeae;
 
 /*EXTENDS*/
 .flex-column {
@@ -25,6 +26,11 @@ $sand-color-hover: #ca8f4d;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $gray-awax;
+    }
 }
 
 /*OTHER*/
@@ -120,9 +126,7 @@ body {
         @extend .button;
         margin-top: 25px;
     
-        &:hover {
-        background-color: $sand-color-hover;
-        }
+        
     }
     .cell-phone {
         width: 80px;
@@ -140,7 +144,7 @@ body {
         justify-content: center;
         cursor: pointer;
         &:hover {
-            background-color: $sand-color-hover;
+            background-color: $gray-awax;
         }
     }  
 }
@@ -162,7 +166,7 @@ body {
         .text {
             margin-top: 10px;
             font-weight: bold;
-            color: #aeaeae;
+            color: $gray-awax;
         }
     }
 
@@ -183,10 +187,6 @@ body {
             .learn-more {
                 @extend .button;
                 margin-top: 10px;
-
-                &:hover {
-                    background-color: $sand-color-hover;
-                }
             }
         }
     }
@@ -242,7 +242,7 @@ body {
                 } 
             }
             .description {
-                color: #aeaeae;
+                color: $gray-awax;
                 line-height: 25px;
             }
         }
@@ -262,7 +262,7 @@ body {
         .text {
             margin-top: 10px;
             font-weight: bold;
-            color: #aeaeae;
+            color: $gray-awax;
         }
     }
     .projects-categories {
