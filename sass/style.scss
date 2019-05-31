@@ -34,19 +34,21 @@ $gray-awax: #aeaeae;
 }
 
 .social-ico {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     color: #fff;
-    font-size: 1.2em;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.tell-about-us-ico {
+    padding: 10px; 
+    margin-right: 10px;
+    @extend .social-ico;
 
     &:hover {
-        transform: scale(1.2);
-        transition-duration: 0.8s;
+        background-color: $sand-color;
     }
 }
 
@@ -410,10 +412,15 @@ body {
                 margin-top: 35px;
                 .social {
                     @extend .social-ico;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1.2em;
                     background-color: #bebebe;
         
                     &:hover {
                         background-color: $sand-color;
+                        transform: scale(1.2);
+                        transition-duration: 0.8s;
                     }
                 }
             }
@@ -720,6 +727,66 @@ body {
             }
             .description {
                 margin-top: 0;
+            }
+        }
+    }
+}
+
+/*SECTION TELL ABOUT US*/
+.tell-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $gray-awax;
+
+    .social-media {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .social {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: $gray-awax;
+            padding: 25px;
+
+        }
+        .icon-share {
+            font-size: 1.2em;
+            &::before {
+                margin-right: 10px;
+                font-size: 1.7em;
+            }
+        }
+        .icon-twitter {
+            &::before {
+                background-color: #33c5ef;
+                @extend .tell-about-us-ico; 
+            }    
+        }
+        .icon-linkedin {
+            &::before {
+                background-color: #117bb3;
+                @extend .tell-about-us-ico;               
+            }
+        }
+        .icon-facebook {
+            &::before {
+                background-color: #336197;
+                @extend .tell-about-us-ico;               
+            }
+        }
+        .icon-gplus-1 {
+            &::before {
+                background-color: #e74137;
+                @extend .tell-about-us-ico;               
+            }
+        }
+        .icon-pinterest {
+            &::before {
+                background-color: #b71b29;
+                @extend .tell-about-us-ico;               
             }
         }
     }

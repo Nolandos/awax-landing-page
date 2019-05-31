@@ -32,24 +32,25 @@
   background-color: #aeaeae;
 }
 
-.social-ico, .our-team .container .worker .social-container .social {
-  width: 40px;
-  height: 40px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+.social-ico, .tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus-1::before, .tell-about-us .social-media .icon-pinterest::before, .our-team .container .worker .social-container .social {
   border-radius: 50%;
   color: #fff;
-  font-size: 1.2em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   cursor: pointer;
 }
 
-.social-ico:hover, .our-team .container .worker .social-container .social:hover {
-  transform: scale(1.2);
-  transition-duration: 0.8s;
+.tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus-1::before, .tell-about-us .social-media .icon-pinterest::before {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.tell-about-us-ico:hover, .tell-about-us .social-media .icon-twitter:hover::before, .tell-about-us .social-media .icon-linkedin:hover::before, .tell-about-us .social-media .icon-facebook:hover::before, .tell-about-us .social-media .icon-gplus-1:hover::before, .tell-about-us .social-media .icon-pinterest:hover::before {
+  background-color: #b88b58;
 }
 
 /*OTHER*/
@@ -445,11 +446,16 @@ body {
 }
 
 .our-team .container .worker .social-container .social {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
   background-color: #bebebe;
 }
 
 .our-team .container .worker .social-container .social:hover {
   background-color: #b88b58;
+  transform: scale(1.2);
+  transition-duration: 0.8s;
 }
 
 /*HAPPY CLIENTS SECTION*/
@@ -779,5 +785,65 @@ body {
 
 .some-facts .container .box .description {
   margin-top: 0;
+}
+
+/*SECTION TELL ABOUT US*/
+.tell-about-us {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.tell-about-us .social-media {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.tell-about-us .social-media .social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: bold;
+  color: #aeaeae;
+  padding: 25px;
+}
+
+.tell-about-us .social-media .icon-share {
+  font-size: 1.2em;
+}
+
+.tell-about-us .social-media .icon-share::before {
+  margin-right: 10px;
+  font-size: 1.7em;
+}
+
+.tell-about-us .social-media .icon-twitter::before {
+  background-color: #33c5ef;
+}
+
+.tell-about-us .social-media .icon-linkedin::before {
+  background-color: #117bb3;
+}
+
+.tell-about-us .social-media .icon-facebook::before {
+  background-color: #336197;
+}
+
+.tell-about-us .social-media .icon-gplus-1::before {
+  background-color: #e74137;
+}
+
+.tell-about-us .social-media .icon-pinterest::before {
+  background-color: #b71b29;
 }
 /*# sourceMappingURL=style.css.map */
