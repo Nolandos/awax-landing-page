@@ -895,3 +895,47 @@ body {
         left: 5%;
     }
 }
+
+/*SECTION FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    .wrapper {
+        border: 2px solid green;
+        width: 25%;
+        padding: 15px;
+        .social-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 35px;
+            .social {
+                @extend .social-ico;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2em;
+                background-color: #bebebe;
+        
+                &:hover {
+                    background-color: $sand-color;
+                    transform: scale(1.2);
+                    transition-duration: 0.8s;
+                }
+            }
+        }
+        >.footer-text {
+
+        }
+        .information-text {
+
+        }
+    }
+
+    .send-email {
+        .email {
+
+        }
+        .subscribe {
+
+        }
+    }
+}
