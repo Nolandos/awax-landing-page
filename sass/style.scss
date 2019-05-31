@@ -790,7 +790,7 @@ body {
                 @extend .tell-about-us-ico;               
             }
         }
-        .icon-gplus-1 {
+        .icon-gplus {
             &::before {
                 background-color: #e74137;
                 @extend .tell-about-us-ico;               
@@ -853,5 +853,45 @@ body {
             margin: 10% 0;
            @extend .button;
         }
+    }
+}
+
+/*SECTION CONTACT-INFO*/
+.contact-info {
+    background-image: url('/images/map-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    position: relative;
+    .info-container {
+        width: 40%;
+        background-color: #fff;
+        @extend .flex-column;
+        align-items: flex-start;
+        padding: 25px;
+        padding-right: 90px;
+        .info-ico {
+            display: flex;
+            align-items: center;
+            color: $gray-awax;
+            font-weight: bold;
+            margin: 15px 0;
+           
+            &::before {
+                @extend .social-ico;
+                background-color: $gray-awax;
+                cursor: auto;
+                padding: 7px;
+                font-size: 1.2em;
+                margin-right: 20px;
+            }
+        }
+    }
+    .arrow-up {
+        @extend .circle-button;
+        bottom: -40px;
+        left: 5%;
     }
 }

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box, .contact-us, .contact-us .contact-form {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box, .contact-us, .contact-us .contact-form, .contact-info .info-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -32,7 +32,7 @@
   background-color: #aeaeae;
 }
 
-.social-ico, .tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus-1::before, .tell-about-us .social-media .icon-pinterest::before, .our-team .container .worker .social-container .social {
+.social-ico, .tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus::before, .tell-about-us .social-media .icon-pinterest::before, .our-team .container .worker .social-container .social, .contact-info .info-container .info-ico::before {
   border-radius: 50%;
   color: #fff;
   display: -ms-flexbox;
@@ -44,12 +44,12 @@
   cursor: pointer;
 }
 
-.tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus-1::before, .tell-about-us .social-media .icon-pinterest::before {
+.tell-about-us-ico, .tell-about-us .social-media .icon-twitter::before, .tell-about-us .social-media .icon-linkedin::before, .tell-about-us .social-media .icon-facebook::before, .tell-about-us .social-media .icon-gplus::before, .tell-about-us .social-media .icon-pinterest::before {
   padding: 10px;
   margin-right: 10px;
 }
 
-.tell-about-us-ico:hover, .tell-about-us .social-media .icon-twitter:hover::before, .tell-about-us .social-media .icon-linkedin:hover::before, .tell-about-us .social-media .icon-facebook:hover::before, .tell-about-us .social-media .icon-gplus-1:hover::before, .tell-about-us .social-media .icon-pinterest:hover::before {
+.tell-about-us-ico:hover, .tell-about-us .social-media .icon-twitter:hover::before, .tell-about-us .social-media .icon-linkedin:hover::before, .tell-about-us .social-media .icon-facebook:hover::before, .tell-about-us .social-media .icon-gplus:hover::before, .tell-about-us .social-media .icon-pinterest:hover::before {
   background-color: #b88b58;
 }
 
@@ -62,7 +62,7 @@
   font-weight: bold;
 }
 
-.circle-button, .jumbotron .cell-phone {
+.circle-button, .jumbotron .cell-phone, .contact-info .arrow-up {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 
-.circle-button:hover, .jumbotron .cell-phone:hover {
+.circle-button:hover, .jumbotron .cell-phone:hover, .contact-info .arrow-up:hover {
   background-color: #aeaeae;
 }
 
@@ -851,7 +851,7 @@ body {
   background-color: #336197;
 }
 
-.tell-about-us .social-media .icon-gplus-1::before {
+.tell-about-us .social-media .icon-gplus::before {
   background-color: #e74137;
 }
 
@@ -910,5 +910,50 @@ body {
 
 .contact-us .contact-form .send-message {
   margin: 10% 0;
+}
+
+/*SECTION CONTACT-INFO*/
+.contact-info {
+  background-image: url("/images/map-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 5% 15%;
+  position: relative;
+}
+
+.contact-info .info-container {
+  width: 40%;
+  background-color: #fff;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  padding: 25px;
+  padding-right: 90px;
+}
+
+.contact-info .info-container .info-ico {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #aeaeae;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.contact-info .info-container .info-ico::before {
+  background-color: #aeaeae;
+  cursor: auto;
+  padding: 7px;
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.contact-info .arrow-up {
+  bottom: -40px;
+  left: 5%;
 }
 /*# sourceMappingURL=style.css.map */
