@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box, .contact-us, .contact-us .contact-form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -13,7 +13,7 @@
       justify-content: center;
 }
 
-.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose, .offert-plan .get-in-touch {
+.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose, .offert-plan .get-in-touch, .contact-us .contact-form .send-message {
   padding: 20px 0;
   width: 250px;
   border-radius: 35px;
@@ -28,7 +28,7 @@
   outline: none;
 }
 
-.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover, .offert-plan .get-in-touch:hover {
+.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover, .offert-plan .get-in-touch:hover, .contact-us .contact-form .send-message:hover {
   background-color: #aeaeae;
 }
 
@@ -51,6 +51,15 @@
 
 .tell-about-us-ico:hover, .tell-about-us .social-media .icon-twitter:hover::before, .tell-about-us .social-media .icon-linkedin:hover::before, .tell-about-us .social-media .icon-facebook:hover::before, .tell-about-us .social-media .icon-gplus-1:hover::before, .tell-about-us .social-media .icon-pinterest:hover::before {
   background-color: #b88b58;
+}
+
+.input, .contact-us .contact-form .wrapper .name, .contact-us .contact-form .wrapper .email, .contact-us .contact-form .subject, .contact-us .contact-form .message {
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1.5px solid #aeaeae;
+  outline: none;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /*OTHER*/
@@ -845,5 +854,58 @@ body {
 
 .tell-about-us .social-media .icon-pinterest::before {
   background-color: #b71b29;
+}
+
+/*SECTION CONTACT-US*/
+.contact-us .header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-us .header .title {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.contact-us .header .text {
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.contact-us .contact-form {
+  width: 50%;
+}
+
+.contact-us .contact-form .wrapper {
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.contact-us .contact-form .wrapper .name {
+  width: 45%;
+}
+
+.contact-us .contact-form .wrapper .email {
+  width: 45%;
+}
+
+.contact-us .contact-form .subject {
+  width: 90%;
+  margin-top: 25px;
+}
+
+.contact-us .contact-form .message {
+  width: 90%;
+  margin-top: 65px;
+}
+
+.contact-us .contact-form .send-message {
+  margin: 10% 0;
 }
 /*# sourceMappingURL=style.css.map */

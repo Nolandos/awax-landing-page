@@ -52,6 +52,15 @@ $gray-awax: #aeaeae;
     }
 }
 
+.input {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1.5px solid $gray-awax;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /*OTHER*/
 body {
   margin: 0;
@@ -788,6 +797,57 @@ body {
                 background-color: #b71b29;
                 @extend .tell-about-us-ico;               
             }
+        }
+    }
+}
+
+/*SECTION CONTACT-US*/
+.contact-us {
+    @extend .flex-column;
+    .header {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        .title {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+        .text {
+            margin-top: 10px;
+            color: #aeaeae;
+            font-weight: bold;
+        }
+    }
+    .contact-form {
+        @extend .flex-column;
+        width: 50%;
+        .wrapper {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            .name {
+                @extend .input;
+                width: 45%;
+            }
+            .email {
+                @extend .input;
+                width: 45%;
+            }
+        }
+        .subject {
+            width: 90%;
+            margin-top: 25px;
+            @extend .input;
+        }
+        .message {
+            width: 90%;
+            margin-top: 65px;
+            @extend .input;
+        }
+        .send-message {
+            margin: 10% 0;
+           @extend .button;
         }
     }
 }
