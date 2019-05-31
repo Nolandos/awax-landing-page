@@ -32,6 +32,26 @@
   background-color: #aeaeae;
 }
 
+.social-ico, .our-team .container .worker .social-container .social {
+  width: 40px;
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.social-ico:hover, .our-team .container .worker .social-container .social:hover {
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+}
+
 /*OTHER*/
 body {
   margin: 0;
@@ -425,25 +445,11 @@ body {
 }
 
 .our-team .container .worker .social-container .social {
-  width: 40px;
-  height: 40px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  border-radius: 50%;
   background-color: #bebebe;
-  color: #fff;
-  font-size: 1.2em;
-  cursor: pointer;
 }
 
 .our-team .container .worker .social-container .social:hover {
   background-color: #b88b58;
-  transform: scale(1.2);
-  transition-duration: 0.8s;
 }
 
 /*HAPPY CLIENTS SECTION*/
