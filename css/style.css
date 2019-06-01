@@ -296,6 +296,7 @@ body {
 .services .container .box .description {
   color: #aeaeae;
   line-height: 25px;
+  text-align: center;
 }
 
 /*SECTION OUR PROJECTS*/
@@ -1063,6 +1064,32 @@ body {
   .navigation .nav-header .nav > ul > li:hover {
     border: none;
   }
+  .services .container {
+    width: 100%;
+  }
+  .services .container .box {
+    margin: 0;
+  }
+  .services .container .box:first-child {
+    margin-top: 15px;
+  }
+  .services .container .box:first-child .wrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .services .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .container .box {
+    width: 40%;
+    border: none;
+  }
+  .services .container .box:last-child {
+    border: none;
+  }
 }
 
 @media (max-width: 776px) {
@@ -1099,6 +1126,9 @@ body {
         align-items: center;
     width: auto;
     text-align: center;
+  }
+  .services .container .box {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
