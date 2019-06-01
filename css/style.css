@@ -440,6 +440,7 @@ body {
 
 .our-team .container .worker {
   width: 30%;
+  margin: 0 10px;
   min-height: 400px;
   padding: 45px 0;
   background-color: #fff;
@@ -469,7 +470,9 @@ body {
 }
 
 .our-team .container .worker .social-container .social {
+  margin: 0 5px;
   width: 40px;
+  min-width: 40px;
   height: 40px;
   font-size: 1.2em;
   background-color: #bebebe;
@@ -1078,6 +1081,17 @@ body {
     margin-top: 15px;
   }
   .services .container .box:first-child .wrapper {
+    width: auto;
+  }
+  .our-team {
+    width: auto;
+  }
+  .our-team .container {
+    padding: 0 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-team .container .worker {
     width: auto;
   }
 }

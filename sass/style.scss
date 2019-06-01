@@ -412,6 +412,8 @@ body {
         margin-bottom: 35px;
         .worker {
             width: 30%;
+            //min-width: 365px;
+            margin: 0 10px;
             min-height: 400px;
             @extend .flex-column;
             padding: 45px 0;
@@ -435,7 +437,9 @@ body {
                 margin-top: 35px;
                 .social {
                     @extend .social-ico;
+                    margin: 0 5px;
                     width: 40px;
+                    min-width: 40px;
                     height: 40px;
                     font-size: 1.2em;
                     background-color: #bebebe;
@@ -1007,6 +1011,22 @@ body {
                     margin-top: 15px;
                     .wrapper {
                         width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-team {
+        width: auto;
+        .container {
+            padding: 0 10px;
+            flex-wrap: wrap;
+            .worker {
+                width: auto;
+                .social-container {
+                    .social {
+                        
                     }
                 }
             }
