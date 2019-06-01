@@ -1101,6 +1101,9 @@ body {
   .our-team .container .worker {
     width: auto;
   }
+  .offert-plan .container {
+    width: auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1120,6 +1123,10 @@ body {
   }
   .happy-clients .client {
     width: auto;
+  }
+  .offert-plan .container {
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 
