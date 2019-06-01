@@ -513,13 +513,14 @@ body {
 .client-logos {
     display: flex;
     justify-content: center;
-    padding: 50px 0 ;
+    padding: 30px 0 ;
     .container {
         width: 80%;
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
         >img {
-
+            margin: 20px 10px;
         }
     }
 }
