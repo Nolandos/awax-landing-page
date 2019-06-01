@@ -1005,4 +1005,18 @@ body {
             }   
         }
     }
+
+    .jumbotron {
+        .header {
+            .title {
+                font-size: 2.0em;
+            }
+            .text {
+                font-size: 1.1em;
+            }
+        }
+        .get-in-touch {
+            margin-top: 10%;
+        }
+    }
 }

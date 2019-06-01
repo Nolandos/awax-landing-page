@@ -1072,5 +1072,14 @@ body {
   .navigation .nav-header .nav > ul {
     width: 100%;
   }
+  .jumbotron .header .title {
+    font-size: 2.0em;
+  }
+  .jumbotron .header .text {
+    font-size: 1.1em;
+  }
+  .jumbotron .get-in-touch {
+    margin-top: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
