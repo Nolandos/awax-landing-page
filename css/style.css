@@ -1081,5 +1081,24 @@ body {
   .jumbotron .get-in-touch {
     margin-top: 10%;
   }
+  .about-us .container {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .about-us .container .video > img {
+    width: 100%;
+  }
+  .about-us .container .content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    width: auto;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
