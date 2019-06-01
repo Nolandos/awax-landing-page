@@ -1111,6 +1111,9 @@ body {
   .our-projects .photos-container {
     width: auto;
   }
+  .happy-clients .client {
+    width: auto;
+  }
 }
 
 @media (max-width: 776px) {
