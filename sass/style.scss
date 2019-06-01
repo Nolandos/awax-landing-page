@@ -872,6 +872,7 @@ body {
         align-items: flex-start;
         padding: 25px;
         padding-right: 90px;
+        border-radius: 3px;
         .info-ico {
             display: flex;
             align-items: center;
@@ -900,42 +901,60 @@ body {
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 3% 0;
     .wrapper {
-        border: 2px solid green;
+        //border: 2px solid green;
         width: 25%;
-        padding: 15px;
+        padding: 0 15px;
+        position: relative;
+        margin: 0 15px;
         .social-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: 35px;
             .social {
                 @extend .social-ico;
                 width: 40px;
                 height: 40px;
+                margin-right: 8px;
                 font-size: 1.2em;
-                background-color: #bebebe;
+                background-color: #373737;
         
                 &:hover {
                     background-color: $sand-color;
-                    transform: scale(1.2);
+                    //transform: scale(1.2);
                     transition-duration: 0.8s;
                 }
             }
         }
-        >.footer-text {
-
+        .footer-text {
+           position: absolute;
+           bottom: 10px;
         }
         .information-text {
-
+            color: $gray-awax;
         }
     }
 
     .send-email {
+        border-radius: 3px;
+        background-color: #373737;
+        @extend .flex-column;
         .email {
-
+            @extend .input;
+            background-color: transparent;
+            color: $gray-awax;
+            width: 75%;
+            margin-bottom: 15px;
+            &::placeholder {
+                text-align: center;
+            }
         }
         .subscribe {
-
+            margin-top: 20px;
+            @extend .button;           
         }
     }
 }

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700,800,900&display=swap");
 /*VARIABLES*/
 /*EXTENDS*/
-.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box, .contact-us, .contact-us .contact-form, .contact-info .info-container {
+.flex-column, .jumbotron, .jumbotron .header, .about-us, .about-us .header, .services, .services .header, .services .container .box, .services .container .box .wrapper, .our-projects, .our-projects .header, .our-projects .photos-container .photo .layer, .our-team, .our-team .header, .our-team .container .worker, .happy-clients, .happy-clients .client, .price, .price .container .box, .offert-plan, .offert-plan .container, .some-facts, .some-facts .container .box, .contact-us, .contact-us .contact-form, .contact-info .info-container, .footer .send-email {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -13,7 +13,7 @@
       justify-content: center;
 }
 
-.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose, .offert-plan .get-in-touch, .contact-us .contact-form .send-message {
+.button, .jumbotron .get-in-touch, .about-us .container .content .learn-more, .our-projects .more-projects, .price .container .box .choose, .offert-plan .get-in-touch, .contact-us .contact-form .send-message, .footer .send-email .subscribe {
   padding: 20px 0;
   width: 250px;
   border-radius: 35px;
@@ -28,7 +28,7 @@
   outline: none;
 }
 
-.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover, .offert-plan .get-in-touch:hover, .contact-us .contact-form .send-message:hover {
+.button:hover, .jumbotron .get-in-touch:hover, .about-us .container .content .learn-more:hover, .our-projects .more-projects:hover, .price .container .box .choose:hover, .offert-plan .get-in-touch:hover, .contact-us .contact-form .send-message:hover, .footer .send-email .subscribe:hover {
   background-color: #aeaeae;
 }
 
@@ -53,7 +53,7 @@
   background-color: #b88b58;
 }
 
-.input, .contact-us .contact-form .wrapper .name, .contact-us .contact-form .wrapper .email, .contact-us .contact-form .subject, .contact-us .contact-form .message {
+.input, .contact-us .contact-form .wrapper .name, .contact-us .contact-form .wrapper .email, .contact-us .contact-form .subject, .contact-us .contact-form .message, .footer .send-email .email {
   padding: 15px 0;
   border: none;
   border-bottom: 1.5px solid #aeaeae;
@@ -932,6 +932,7 @@ body {
       align-items: flex-start;
   padding: 25px;
   padding-right: 90px;
+  border-radius: 3px;
 }
 
 .contact-info .info-container .info-ico {
@@ -963,32 +964,69 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 3% 0;
 }
 
 .footer .wrapper {
-  border: 2px solid green;
   width: 25%;
-  padding: 15px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 15px;
 }
 
 .footer .wrapper .social-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 35px;
 }
 
 .footer .wrapper .social-container .social {
   width: 40px;
   height: 40px;
+  margin-right: 8px;
   font-size: 1.2em;
-  background-color: #bebebe;
+  background-color: #373737;
 }
 
 .footer .wrapper .social-container .social:hover {
   background-color: #b88b58;
-  transform: scale(1.2);
   transition-duration: 0.8s;
+}
+
+.footer .wrapper .footer-text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.footer .wrapper .information-text {
+  color: #aeaeae;
+}
+
+.footer .send-email {
+  border-radius: 3px;
+  background-color: #373737;
+}
+
+.footer .send-email .email {
+  background-color: transparent;
+  color: #aeaeae;
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+.footer .send-email .email:-ms-input-placeholder {
+  text-align: center;
+}
+
+.footer .send-email .email::placeholder {
+  text-align: center;
+}
+
+.footer .send-email .subscribe {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
