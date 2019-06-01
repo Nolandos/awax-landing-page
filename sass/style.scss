@@ -303,6 +303,10 @@ body {
             color: $gray-awax;
         }
     }
+
+    .project-dropdown {
+        display: none;
+    }
     .projects-categories {
         display: flex;
         align-items: center;
@@ -1023,6 +1027,11 @@ body {
             }
         }
     }
+    .our-projects {
+        .photos-container {
+            width: auto;
+        }
+    }
 }
 
 @media (max-width: 776px) {
@@ -1080,5 +1089,69 @@ body {
         }
     }
 
+    .our-projects {
+        .dropdown-wrapper {
+            position: relative;
+            .project-dropdown {
+                background-color: #ededed;
+                font-size: 1.3em;
+                color: $sand-color;
+                height: 50px;
+                border-radius: 50px 50px 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 187px;
+                &::before {
+                    content: '\e803';
+                    font-family: fontello;
+                    margin-right: 10px;
+                    transform: rotate(180deg);
+                }
+            }
+            .projects-categories {
+                position: absolute;
+                display: none;
+                border: none;
+                height: auto;
+                padding: 0;
+                z-index: 5;
+                margin-top: 0;
+                border-radius: 0 0 50px 50px;
+                &.show {
+                    display: block;
+                }
+                >li {
+                    max-width: 187px;
+                    border-right: none;
+                    border-bottom: #cfcfcf;  
+                    >a {
+                        &:hover {
+                            border-bottom: 8px solid transparent;
+                        } 
+                    }            
+                }
+            }
+        }
+        .photos-container {
+            .photo {
+                width: 48%;
+                .layer {
+                    font-size: 0.9em;
+                    .title {
+                        font-size: 1.1em;
+                        margin: 0;
+                    }
+                    .description {
+                        font-size: 0.9em;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    
     
 }
