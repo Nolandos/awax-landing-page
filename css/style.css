@@ -593,14 +593,15 @@ body {
   width: 95%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .price .container .box {
   background-color: #fff;
   padding: 10px 25px;
-  width: 21%;
   margin-bottom: 45px;
   margin-right: 15px;
   margin-left: 15px;

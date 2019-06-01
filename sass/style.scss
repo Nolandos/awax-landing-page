@@ -548,12 +548,12 @@ body {
     .container {
         width: 95%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         .box {
             background-color: #fff;
             @extend .flex-column;
             padding: 10px 25px;
-            width: 21%;
             margin-bottom: 45px;
             margin-right: 15px;
             margin-left: 15px;
