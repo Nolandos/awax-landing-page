@@ -99,22 +99,26 @@ body {
     .nav {
       display: flex;
       align-items: center;
+      justify-content: center;
       height: 90px;
-      
+      width: 100%;
+      padding-left: 15px;
+
       .logo {
-        margin-right: 120px;
         cursor: pointer;
+        margin-right: 7%;
       }
       
       >ul {
         display: flex;
         align-items: center;
         list-style-type: none;
+        padding-left: 0;
         height: 90px;
         
         >li {
           text-transform: uppercase;
-          padding: 0 15px;
+          padding: 0 10px;
           cursor: pointer;
           height: 82px;
           display: flex;
@@ -124,6 +128,7 @@ body {
           
           >a {
             font-weight: bold;
+            font-size: 1em;
           }
           
           &:hover {
@@ -905,14 +910,13 @@ body {
     color: #fff;
     padding: 3% 0;
     .wrapper {
-        //border: 2px solid green;
         width: 25%;
         padding: 0 15px;
         position: relative;
         margin: 0 15px;
         .social-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             margin-top: 35px;
             .social {
                 @extend .social-ico;
@@ -924,7 +928,6 @@ body {
         
                 &:hover {
                     background-color: $sand-color;
-                    //transform: scale(1.2);
                     transition-duration: 0.8s;
                 }
             }
@@ -955,6 +958,51 @@ body {
         .subscribe {
             margin-top: 20px;
             @extend .button;           
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .navigation {
+        min-height: 530px;
+        .nav-header {
+            .nav {
+                flex-direction: column;
+                height: auto;
+
+                .logo {
+                    padding-top: 25px;
+                    margin-right: 0;
+                }
+                >ul {
+                    display: block;
+                    width: 50%;
+                    height: auto;
+                     >li {
+                       
+                        border: 1px solid $gray-awax;
+                        border-radius: 3px;
+                        margin: 7px 0;
+                        height: 35px;
+                        &:hover {
+                            border: none;
+                        }
+                     }
+                }
+            }   
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .navigation {
+        .nav-header {
+            .nav {
+                padding: 0 10px;
+                >ul {
+                    width: 100%;
+                }
+            }   
         }
     }
 }
