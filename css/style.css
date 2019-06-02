@@ -977,6 +977,7 @@ body {
 .contact-info .arrow-up {
   bottom: -40px;
   left: 5%;
+  z-index: 1;
 }
 
 /*SECTION FOOTER*/
@@ -1121,6 +1122,9 @@ body {
   .contact-info .info-container {
     width: 60%;
   }
+  .footer .wrapper {
+    width: auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1150,6 +1154,34 @@ body {
   }
   .contact-info .info-container {
     width: 70%;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .footer .wrapper {
+    position: static;
+  }
+  .footer .wrapper .social-container {
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  .footer .wrapper .footer-text {
+    position: absolute;
+    right: calc(50% - 45px);
+    bottom: 15px;
+  }
+  .footer .wrapper .information-text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .footer .send-email {
+    padding: 25px;
+    margin-bottom: 55px;
+  }
+  .footer .send-email .email {
+    width: auto;
   }
 }
 

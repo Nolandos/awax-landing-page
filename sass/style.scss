@@ -909,6 +909,7 @@ body {
         @extend .circle-button;
         bottom: -40px;
         left: 5%;
+        z-index: 1;
     }
 }
 
@@ -1061,6 +1062,11 @@ body {
             width: 60%;
         }
     }
+    .footer {
+        .wrapper {
+            width: auto;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -1099,6 +1105,35 @@ body {
     .contact-info {
         .info-container {
             width: 70%;
+        }
+    }
+    .footer {
+        flex-wrap: wrap;
+        position: relative;
+        .wrapper {
+            position: static;
+            .social-container {
+                margin-top: 55px;
+                margin-bottom: 25px;
+            }
+
+            .footer-text {
+                position: absolute;
+                right: calc(50% - 45px);
+                bottom: 15px;
+            }
+            .information-text {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+        .send-email {
+            padding: 25px;
+            margin-bottom: 55px;
+
+            .email {
+                width: auto;
+            }
         }
     }
 }
