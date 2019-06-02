@@ -1104,6 +1104,14 @@ body {
   .offert-plan .container {
     width: auto;
   }
+  .some-facts .container {
+    width: auto;
+    padding: 0 15px;
+  }
+  .some-facts .container .box {
+    width: auto;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1225,6 +1233,19 @@ body {
   .our-projects .photos-container .photo .layer .description {
     font-size: 0.9em;
     margin: 0;
+  }
+  .some-facts .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .some-facts .container .box {
+    padding: 0 35px;
+  }
+  .some-facts .container .box .category {
+    height: auto;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
