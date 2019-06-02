@@ -1055,6 +1055,12 @@ body {
             width: 70%;
         }
     }
+    .contact-info {
+        background-position: center;
+        .info-container {
+            width: 60%;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -1088,6 +1094,11 @@ body {
     .contact-us {
         .contact-form {
             width: 100%;
+        }
+    }
+    .contact-info {
+        .info-container {
+            width: 70%;
         }
     }
 }
@@ -1234,6 +1245,14 @@ body {
                 padding: 0;
                 margin: 10px 15px;
             }
+        }
+    }
+    .contact-info {
+        padding: 25px;
+        .info-container {
+            width: auto;
+            padding: 15px;
+            margin-bottom: 40px;
         }
     }
     
