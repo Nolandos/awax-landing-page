@@ -693,7 +693,7 @@ body {
 
 .offert-plan .container {
   width: 80%;
-  padding: 0 25px;
+  padding: 0 20px;
   padding-bottom: 35px;
   border-bottom: 1px solid #bebebe;
   -ms-flex-direction: row;
@@ -993,7 +993,7 @@ body {
 
 .footer .wrapper {
   width: 25%;
-  padding: 0 15px;
+  padding: 0 10px;
   position: relative;
   margin: 0 15px;
 }
