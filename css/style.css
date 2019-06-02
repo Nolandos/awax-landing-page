@@ -1247,5 +1247,18 @@ body {
     height: auto;
     margin-bottom: 10px;
   }
+  .tell-about-us .social-media {
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px 0;
+  }
+  .tell-about-us .social-media .social {
+    width: 40%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+    margin: 10px 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
